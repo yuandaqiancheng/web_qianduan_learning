@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+      .main{
+        width: 900px;
+
+      }
+      section:nth-child(n){
+        width: 240px;
+        height: 300px;
+        float: left;
+        /*background-color: #ccc;*/
+        margin:10px;
+      }
+      /*section:nth-child(3n){
+    
+        background-color:orange;
+      }*/
+      /*section:nth-child(){
+        background-color:yellow;
+      }*/
+      /*Odd 和 even 是可用于匹配下标是奇数或偶数的子元素的关键词（第一个子元素的下标是 1）*/
+      section:nth-child(odd){
+        background-color:skyblue;
+      }
+       section:nth-child(even){
+        background-color:red;
+      }
+      
+
+
+  </style>
+</head>
+<body>
+<div class="main">
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+</div>
+  
+</body>
+</html>

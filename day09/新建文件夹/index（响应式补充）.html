@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+html,body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /*width: 1438px;*/
+  width: 100%;
+  /*height: 2200px;*/
+  /*height:100%;可以不写*/
+  background-color: skyblue;
+  font-size: 12px;
+}
+.wrap{
+  /*width:1150px;*/
+  /*1150/1438*/
+  width: 80%;
+  height: 2000px;
+  /*height: 100%;可以不写*/
+  /*margin: 50px auto;*/
+  margin: 2.39% auto;
+  background-color: #ccc;
+  /*指的是wrap到640px宽不变*/
+  min-width: 640px;
+}
+.wrap{
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+.wrap a{
+  float: left;
+  /*width: 380px;*/
+  width: 33%;
+  /*height: 250px;*/
+  border-radius:30px;
+  overflow: hidden;
+  background-color: cyan;
+  /*margin-bottom: 10px;*/
+  margin-bottom: 0.478%;
+}
+.wrap img{
+  width: 100%;
+  height: 80%;
+}
+.wrap span{
+  display: block;
+  width: 100%；
+  height:20%;
+  background-color: pink;
+  text-align: center;
+  line-height: 50px;
+}
+.wrap a:nth-child(3n-1){
+  /*margin: 0.50px;*/
+  margin: 0 0.434%;
+}
+@media screen and (max-width: 640px){
+  .wrap{
+    background-color: yellow;
+    width: 100%;
+    min-width: 480px;
+  }
+  .wrap a{
+    width: 33%;
+  }
+  .wrap a:nth-of-type(3n-2){
+    margin-left: 1.5%;
+  }
+  .wrap a:nth-of-type(3n-1){
+    margin: 0 3%;
+  }
+}
+@media screen and (max-width: 480px){
+  .wrap{
+    width: 100%;
+    background-color: purple;
+    text-align: center;
+    min-width: 320px;
+
+  }
+  .wrap a{
+    width: 47%;
+    margin: 0 2% 0 0;
+
+  }
+  .wrap a:nth-of-type(3n-2){
+    margin-left: 0;
+  }
+  .wrap a:nth-of-type(3n-1){
+    margin: 0;
+  }
+  .wrap a:nth-of-type(2n+1){
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+  </a>
+  <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+  </a>
+  <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+    </a>
+     <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+    </a>
+     <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+    </a>
+     <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+    </a>
+    <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+    </a>
+    <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+    </a>
+    <a href="###">
+    <img src="img/1.jpeg">
+    <span>我是文字</span>
+    </a>
+  
+</div>
+  
+</body>
+</html>

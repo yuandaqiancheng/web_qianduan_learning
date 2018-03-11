@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,max-scale=1.0,user-scalable=0">
+  <title>Document</title>
+  <style type="text/css">
+            html,body{
+              width: 100%;
+              height: 100%;
+              margin:0;
+              padding: 0;
+            }
+            .wrap{
+              width: 100%;
+              /*为啥加了不能覆盖全部的div*/
+              /*height: 100%;*/
+              background-color: rgb(241,241,241);
+              text-align: center;
+            }
+            .header{
+              width: 100%;
+              height: 77px;
+              opacity: 0.75;
+              height: 92px;
+              background-color: rgb(0,0,0);
+              text-align: center;
+              position: fixed;
+              box-shadow: 0px 4px 4px rgba(0,0,0,0.5)
+
+            }
+            .h1{
+              height: 44px;
+              width: 100%;
+              /*为啥可以不加居中*/
+              text-align: center;
+            }
+            .header img{
+              width: 136px;
+              height: 44px;
+              margin-top: 15px;
+            }
+            .h2{
+              /*width: 80%;*/
+              height: 17px;
+              /*margin: auto;*/
+              margin-top: 20px;
+              min-width: 320px;
+            }
+            .h2 a{
+              margin: 2% 5.5% 0;
+              text-decoration: none;
+              color: #898989;
+            }
+            .h2 a:hover{
+              color: white;
+            }
+            .content{
+              width: 60%;
+              height: auto;
+              margin: auto;
+              /*padding-top: 8%;*/
+            }
+            .content a{
+              width: 100%;
+              height: 60%;
+            }
+            .content img{
+              width: 100%;
+              height: 100%;
+              margin-top: 122px;
+             
+              }
+              span{
+                width: 6px;
+                height: 6px;
+                border-radius: 3px 3px;
+                background-color: #999;
+                display: inline-block;
+                margin:0 2px;
+                margin: auto;
+              }
+              
+              .content p{
+                width:100%;
+                text-indent: 2em;
+                margin-top: 40px;
+                padding: 2% 0;
+                font-size: 0.9em;
+                line-height: 1.5em;
+                color: rgb(102,102,102);
+                font-family: "微软雅黑";
+                border-top: 1px solid rgb(232,232,232);
+                border-bottom: 1px solid rgb(232,232,232);
+                text-align: left;
+              }
+              .logo{
+                width: 100%;
+                height: 10%;
+                margin:3% 3%;
+                margin: 0 auto;
+                padding-bottom: 40px;
+
+
+              }
+              .logo img{
+                width: 5%;
+                height: 26.67px;
+                margin: 0 10px;
+
+                
+              }
+              .p_wrap{
+                width:100%;
+                /*padding-top: */
+                
+                /*区别是啥？*/
+                clear: both;
+
+              }
+              .p_wrap a{
+                width: 30%;
+                margin: 0 0 5%;
+                float: left;
+                display: inline-block;
+                text-decoration: none;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px #e3e3e3;
+                background-color: white;
+                
+              }
+              .p_wrap img{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+              }
+              .p_wrap p{
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                color: #666666;
+                background-color: white;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                margin-top:0;
+                border:0;
+                font-family: HUM521L;
+                font-size: 0.98em;
+                overflow: hidden;
+
+              }
+              .p_wrap .a1{
+                margin: 0 5% 5% 5%;
+              }
+              .footer{
+                height: 189px;
+                margin-top: 40px;
+                padding-top: 10px;
+                background-color: #e0e0e0;
+                clear: both;
+              }
+                .left{
+                width: 49%;
+                height: 50px;
+                float: left;
+                margin-right: 1%;
+                text-align: right;
+              }
+              .left div{
+                width: 108px;
+                height: 50px;
+                /*background-color: red;*/
+                float: right;
+              }
+              .left a{
+                width: 36px;
+                border: 0;
+              }
+              .left img{
+                width: 30px;
+                height: 25px;
+              }
+              .right{
+                /*干掉wrap里面的居中对right的影响*/
+                text-align: left;
+                width: 49%;
+                height: 164px;
+                border-left:1px solid  #bcbcbc;
+                float: right;
+               
+              }
+            
+              .right img{
+                width: 143px;
+                margin-left: 3%;
+                margin-bottom: 10px;
+              }
+              .right p{
+                color: #666666;
+                font-size: 0.75em;
+                height: 12px;
+                margin-left: 3%;
+                margin-top: 0;
+                margin-bottom: 5px;
+              }
+              @media screen and (max-width: 480px)
+              {
+                
+                .p_wrap a{
+                  width: 45%;
+                  margin:0 2.5% 5% 2.5%;
+
+                }
+                .p_wrap .a1{
+                margin: 0 2.5% 5% 2.5%;
+              }
+              .logo img{
+                margin:0 5px;
+                min-width: 38px;
+              }
+            }
+            @media screen and (max-width: 640px)
+            {
+              .wrap p{
+                line-height: 25px;
+              }
+              .footer{
+                margin-top: 20px;
+              }
+              body{
+                font-size: 86%;
+              }
+              .content p{
+                margin-top: 35px;
+              }
+              .header img{
+                width: 110px;
+                height: 32px;
+              }
+              .content{
+                width: 80%;
+              }
+            }
+            /*@media screen and (min-width: 641px) and (max-width: 699px)
+            {
+            .content{
+              width: 90%;
+            }
+            }*/
+            
+
+              
+
+  </style>
+           
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="h1">
+        <img src="http://www.infinistudio.cn/Public/home/images/title2.png">
+      </div>
+      <div class="h2">
+                  <a href="">HOME</a>
+                  <a href="#work">WORK</a>
+                  <a href="#contact">CONTACT</a>
+                  <a href="join_us.html">JOIN US</a>
+      </div>
+    </div>
+    <div class="content">
+       <a href="xxx">
+         <img src="img/创意.jpeg">
+       </a>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+       
+       
+       <p>Infini Studio (映纷创意)是一家创意机构，专注于品质型动画影像的创意与设计。我们使用设计、绘画、动画、特效及多种创新形式，以动态视觉语言对品牌与内容进行创意呈现。并由动画导演、设计师、插画师、三维艺术家等共同协作完成。服务的领域包括广告、创意H5、新媒体等。
+       </p>
+
+       <div class="logo" id="work">
+        <img src="http://www.infinistudio.cn/Public/home/images/1.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/2.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/14.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/3.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/4.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/5.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/6.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/7.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/12.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/13.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/8.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/9.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/10.jpg" alt="">
+        <img src="http://www.infinistudio.cn/Public/home/images/11.jpg" alt="">
+      </div>
+            <div class="p_wrap">
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-06-22/594b69293281a.jpg" alt=""><p>小米max2创意海报</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-05-04/590aca83b9c1e.jpg" alt=""><p>聚星台会员通</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-04-15/58f22ebf4ecc7.jpg" alt=""><p>清新绿实验室大揭秘H5</p></a>
+
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-04-14/58f0a4b73384a.jpg" alt=""><p>今日头条功能片第二弹</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-04-14/58f09de5e6b67.jpg" alt=""><p>百度情人节首页Doodle</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be6a566c65e.jpg" alt=""><p>微众银行品牌宣传片</p></a>
+
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be69ba43c21.jpg" alt=""><p>动画短片《旅行者大意了》</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be68c7e44ff.jpg" alt=""><p>扇贝雅思课程</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be681777a97.jpg" alt=""><p>链家大数据</p></a>
+
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-08/58bf7e8d5e7d0.jpg" alt=""><p>天猫魔盒3Pro魔力全开</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be6676a7b8f.jpg" alt=""><p>今日头条功能片第一弹</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be52069aa59.jpg" alt=""><p>汇通天下G7品牌动画</p></a>
+
+
+             <!-- 第二部分 -->
+
+             <a href="" id="contact"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be4a1353269.jpg" alt=""><p>链家APP卖房频道2.0</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be4a1353269.jpg" alt=""><p>腾讯网络媒体峰会</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be64f0b491c.jpg" alt=""><p>未来媒体峰会</p></a>
+
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be46ed912f3.jpg" alt=""><p>“有利网”宣传动画</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be45218ded1.jpg" alt=""><p>今天就看今日头条</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be43d6da252.jpg" alt=""><p>《易车影业》片头动画</p></a>
+
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be4279276f1.jpg" alt=""><p>为什么我们要回家过年</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be4012d1607.jpg" alt=""><p>开窍APP创意视频</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be3f4219eb3.jpg" alt=""><p>诛仙世界CG动画</p></a>
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be3daba9f0a.jpg" alt=""><p>F+PLUS音乐品牌动画</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be3c4a759be.jpg" alt=""><p>《拜托了冰箱》栏目包装</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be3b117d010.jpg" alt=""><p>吴亦凡——器官的纷争</p></a>
+
+             <!-- 第三部分 -->
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-06-22/594b69293281a.jpg" alt=""><p>小米max2创意海报</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-05-04/590aca83b9c1e.jpg" alt=""><p>聚星台会员通</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-04-15/58f22ebf4ecc7.jpg" alt=""><p>清新绿实验室大揭秘H5</p></a>
+
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-04-14/58f0a4b73384a.jpg" alt=""><p>今日头条功能片第二弹</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-04-14/58f09de5e6b67.jpg" alt=""><p>百度情人节首页Doodle</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be6a566c65e.jpg" alt=""><p>微众银行品牌宣传片</p></a>
+
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be69ba43c21.jpg" alt=""><p>动画短片《旅行者大意了》</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be68c7e44ff.jpg" alt=""><p>扇贝雅思课程</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be681777a97.jpg" alt=""><p>链家大数据</p></a>
+
+
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-08/58bf7e8d5e7d0.jpg" alt=""><p>天猫魔盒3Pro魔力全开</p></a>
+             <a href="" class="a1"><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be6676a7b8f.jpg" alt=""><p>今日头条功能片第一弹</p></a>
+             <a href=""><img src="http://www.infinistudio.cn/Public//Upload/2017-03-07/58be52069aa59.jpg" alt=""><p>汇通天下G7品牌动画</p></a>
+
+           </div>
+  </div>
+            <div class="footer">
+    <div class="left">
+      <div>
+        <a href="http://weibo.com/InfiniVision/">
+          <img src="img/weibo.jpeg" alt="">
+        </a>
+        <a href="http://infini.zcool.com.cn/">
+          <img src="img/zcool.jpeg" alt="">
+        </a>
+        <a href="http://i.youku.com/u/UMTMyODY0NzU2">
+          <img src="img/youku.jpeg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="right">
+
+     <img src="img/footer_logo.jpeg">
+     <p>Infini Studio | 映纷创意</p>
+     <p>北京市朝阳区常营未来时大厦706</p>
+     <p>TEL : 010-85394331</p>
+     <p>QQ : 7585917</p>
+     <p>Email : infinistudio@foxmail.com</p>
+     <p>weibo : @InfiniStudio</p>
+   </div>
+ </div>
+</div>
+  
+</body>
+</html>

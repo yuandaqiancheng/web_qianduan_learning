@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+      .fl{
+        float: left;
+
+      }
+      .fr{
+        float:right;
+      }
+      /*after前面不要空格*/
+      .clear:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .wrap{
+        width: 500px;
+        border:1px solid black;
+
+        margin:0 auto;
+      }
+      .header{
+        background-color: red;
+
+      }
+      .header div{
+        width:98px;
+        height: 98px;
+        border:1px solid black;
+      }
+     .content{
+      background-color: yellow;
+     }
+     .content .left{
+      width:350px;
+      height: 400px;
+      background-color: pink;
+     }
+     .content .right{
+      width:150px;
+      height: 400px;
+      background-color: green;
+     }
+     .content .left .six{
+      /*块元素根据父元素来确定，不用写宽*/
+      height: 150px;
+      border:1px solid black;
+
+     }
+     .content .left .eight{
+      width: 198px;
+      height: 148px;
+      border:1px solid black;
+
+     }
+     .content .left .nine{
+      width: 148px;
+      height: 148px;
+      border:1px solid black;
+
+     }
+     .content .left .el{
+      
+      height: 98px;
+      border:1px solid black;
+
+     }
+     .content .right{
+      width: 148px;
+      height: 398px;
+      background-color: green;
+
+     }
+     .content .right div{
+      height: 98px;
+      border:1px solid black;
+     }
+     .footer{
+      height: 98px;
+      border:1px solid black;
+
+     }
+  </style>
+</head>
+<body>
+          <div class="wrap">
+               <div class="header clear">
+                 <div class="fl">1</div>
+                 <div class="fl">2</div>
+                 <div class="fl">3</div>
+                 <div class="fl">4</div>
+                 <div class="fl">5</div>
+               </div>
+               <div class="content clear">
+                 <div class="left">
+                   <div class="six">6</div>
+                   <div class="en clear">
+                     <div class="eight fl">8</div>
+                     <div class="nine fl">9</div>
+                   </div>
+                   <div class="el">11</div>
+                   
+                 </div>
+                 <div class="right fl">
+                   <div class="seven">7</div>
+                   <div class="ten">10</div>
+                 </div>
+               </div>
+               <div class="footer">12</div>
+          </div>
+      
+  
+</body>
+</html>

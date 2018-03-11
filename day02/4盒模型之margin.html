@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  p{
+       width: 300px;
+       height: 300px;
+       background-color: orange;
+       font-size: 50px；
+      
+       line-height: 300px；
+       margin：0；
+
+
+    }
+    #p2{
+    
+        margin-top: 100px；
+         }
+    </style>
+</head>
+<body>
+<p id="p1">我是p1元素</p> 
+<p id="p2">我是p2元素</p>
+  
+</body>
+</html>
+<!-- 1.页面上面的所有元素都是盒模型，默认占满100%
+       2.同级元素产生间距用margin，margin不会改变元素大小；嵌套关系的元素产生间距用padding，padding会增加父级元素（若在子级加，也会增加子级的高度）对应方向的距离，则减去父元素对应方向的高和宽
+       3.垂直方向中，p1产生margin为a，p2产生margin为b，则哪个大显示哪个值
+
+-->

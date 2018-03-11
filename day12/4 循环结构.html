@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script type="text/javascript">
+var sum=0;
+  for(var i=1;i<=100;i++){
+    // sum=sum+i;
+    sum+=i;
+  }
+  // 如果知道循环次数，最好用for；只是知道停止条件，不知道次数，用while；do while:至少循环一次
+  var i=0;
+  var sum1=0;
+  while(j<=100){
+    sum1+=j;
+    j++;
+  }
+
+  var rightPW=88888;
+  var j=0;
+  do{
+    j++;
+    if(j>3){
+      alert("卡已经被吞，是不是你自己的卡？");
+      break;
+    }
+      var pw=prompt("请输入密码：");
+      if(rightPW==pw){
+        alert("密码正确，请取款");
+      }
+      else{
+        alert("密码输入错误"+j+"次，请重新输入");
+      }
+  }while(pw!=rightPW);
+  // 条件是不满足就循环
+
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+        h3:before{
+          /*content: url();*/
+          /*加在h3标签前面的内容*/
+          content: "瓜皮说:";
+        }
+        h3:after{
+          /*加在h3标签后面的内容*/
+          content: "------选自《瓜皮引录》";
+        }
+        /*选择属于其父元素的第二个子元素的每个p元素，要求：p有父元素，同时第二个元素是p就显示没有就不显示*/
+        p:nth-child(2){
+          background-color: blue;
+        }
+        p:nth-last-child(2){
+          background-color: pink;
+        }
+        /*这种类型的第二个*/
+        p:nth-of-type(2){
+          background-color: green;
+        }
+        p:nth-last-of-type(2){
+          background-color: black;
+        }
+  </style>
+</head>
+<body>
+<div>
+  <h3>不以风骚惊天下，就以淫荡动世人</h3>
+  <p>有奶不一定是娘，但有钱一定是爷</p>
+  <h3>读书读到抽筋处，文思方能如尿崩</h3>
+  <p>世态炎凉鸡最懂，人情冷暖鸭先知</p>
+</div>
+<div>
+    <span>文能挂机喷队友--span</span>
+    <p>武能越塔送人头--p1</p>
+    <p>进能孤身一桃五--p2</p>
+    <p>退可坐等六分投--p3</p>
+    <p>前能飞脚救残敌--p4</p>
+    <p>后能方墙堵队友--p5</p>
+    <p>静能百年不见人--p6</p>
+    <p>动则千里送超神</p>
+    <li></li>
+    <p></p>
+</div>
+<h2>顺风浪，逆风投，问君能有几多愁，恰似五人四人坑，各种投</h2>
+<h1>标题：小学生</h1>
+  
+</body>
+</html>

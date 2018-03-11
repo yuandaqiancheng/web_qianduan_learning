@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="animate.css">
+  <style type="text/css">
+  html,body{
+    margin: 0;
+    padding: 0;
+    background:url(img2/bg.png) no-repeat;
+    /*浏览器屏幕大小*/
+    background-size:1980px 1080px;
+    
+     }
+    .wrap{
+     margin:0;
+     width: 100%;
+     /*width: 1400px;*/
+     height: 800px;
+     text-align: center;
+     }
+  .wrap .header{
+    width: 100%;
+    height: 100px;
+    /*position: absolute;*/
+    padding-top: 10%;
+    /*margin-left: 5%;*/
+    min-width: 640px;
+    text-align: left;
+    
+  }
+ 
+ .wrap .header div{
+  /*float: left;*/
+  height: 50px;
+  margin-left: 5%;
+  /*height: 5%;*/
+  /*margin-bottom: 0;*/
+  padding-bottom: 0;
+  display: inline-block;
+ }
+ .wrap .header img{
+  width: 100%;
+  height:100%;
+ }
+ .wrap .header .h2{
+  margin-left: 50px;
+  height: 30px;
+  /*margin-bottom: 0;*/
+  /*想要拥有行标签属性一行输出，进而不用浮动*/
+  display: inline-block;
+ }
+ .wrap .content{
+  /*position: absolute;*/
+  /*left: 20%;*/
+  width:60%;
+  height: 60%;
+  margin: 50px auto 0;
+  min-width: 640px;
+  /*background: green;*/
+  
+}
+.wrap .content:after{
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+.wrap .content div{
+  float: left;
+  height: 32.833%;
+  margin-bottom: 0.5%;
+}
+.wrap .content div img{
+  width: 100%;
+  height: 100%;
+  }
+.wrap .content div:nth-child(n){
+  margin-right: 0.5%;
+
+}
+.wrap .content div:nth-child(4n-3){
+  margin-right: 3%;
+  width: 35.5%;
+}
+.wrap .content div:nth-child(4n-2){
+  margin-right: 0.5%;
+  width: 15%;
+}
+.wrap .content div:nth-child(4n-1){
+  margin-right: 0.5%;
+  width: 15%;
+}
+.wrap .content div:nth-child(4n){
+  margin-right: 0.5%;
+  width: 30%;
+}
+
+@media screen and (max-width: 699px){
+ .content{
+  min-width: 640px;
+  width:100%;
+}
+.header{
+  min-width: 640px;
+  width: 100%;
+}
+}
+@media screen and (max-width: 640px){
+  .wrap .header{
+    width: 60%;
+    margin: 5px auto;
+    text-align: left;
+    min-width: 384px;
+  }
+  .wrap .header .div{
+    display: block;
+}
+.wrap .header .h1{
+   margin-left: 0;
+}
+ 
+  .wrap .header .h2{
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin-left: 0;
+  }
+   .wrap .content{
+    width: 60%;
+    height: 80%;
+    min-width: 384px;
+    margin:5px auto;
+  }
+  .wrap .content div:nth-child(n){
+  margin-right: 0.5%;
+  height: 16.16%;
+}
+.wrap .content div:nth-child(2n-1){
+  width: 60%;
+}
+.wrap .content div:nth-child(2n){
+ width: 39%;
+}
+.wrap .content div:nth-child(7){
+ width: 39%;
+}
+.wrap .content div:nth-child(8){
+ width: 60%;
+}
+.wrap .content div:nth-child(9){
+ width: 39%;
+}
+.wrap .content div:nth-child(10){
+ width: 60%;
+}
+}
+
+.content .a:hover{
+      animation-name: bounce;
+}
+.content .b:hover{
+      animation-name: shake;
+}
+.content .c:hover{
+      animation-name: bounce;
+}
+.content .d:hover{
+      animation-name: bounce;
+}
+.content .e:hover{
+      animation-name: bounce;
+}
+.content .f:hover{
+      animation-name: swing ;
+}
+.content .g:hover{
+      animation-name: swing ;
+}
+.content .h:hover{
+      animation-name: rubberBand;
+}
+.content .i:hover{
+      animation-name: flash;
+}
+.content .j:hover{
+      animation-name: pulse;
+}
+.content .k:hover{
+      animation-name: bounce;
+}
+.content .l:hover{
+      animation-name: pulse;
+}
+
+.header .h1:hover{
+  animation-name:  rubberBand;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+   <div class="h1 animated infinite">
+     <img src="img2/logo.png" alt="">
+   </div>
+   <div class="h2">
+     <img src="img2/welcome.png" alt="">
+   </div>
+ </div>
+ <div class="content">
+   <div class="animated infinite a"><img src="img2/visit.png" alt=""></div>
+   <div class="animated infinite b"><img src="img2/contract.png" alt=""></div>
+   <div class="animated infinite c"><img src="img2/sjzx.png" alt=""></div>
+   <div class="animated infinite d"><img src="img2/sina.png" alt=""></div>
+   <div class="animated infinite e"><img src="img2/admin.png" alt=""></div>
+   <div class="animated infinite f"><img src="img2/guide.png" alt=""></div>
+   <div class="animated infinite g"><img src="img2/hall.png" alt=""></div>
+   <div class="animated infinite h"><img src="img2/tencent.png" alt=""></div>
+   <div class="animated infinite i"><img src="img2/expo.png" alt=""></div>
+   <div class="animated infinite j"><img src="img2/axam.png" alt=""></div>
+   <div class="animated infinite k"><img src="img2/traval.png" alt=""></div>
+   <div class="animated infinite l"><img src="img2/weico.png" alt=""></div>
+ </div>
+</div>
+ 
+
+  
+</body>
+</html>

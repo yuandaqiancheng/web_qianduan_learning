@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  .div{
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    background-color: #ccc;
+  }
+  .div2{
+    width: 200px;
+    height:200px;
+    border-right: 100px;
+    background-color: #ccc;
+  }
+  .div3{
+    width: 200px;
+    height:200px;
+    /*上 上 下 下/左 右  右 左*/
+    border-radius: 100px 0 100px 0/100px 0 100px 0;
+    background-color: #ccc;
+  }
+  .div4{
+    width: 200px;
+    height:200px;
+    /*上 上 下 下/左 右  右 左*/
+    border-radius: 100px 0 100px 100px/100px 0 100px 100px;
+    background-color: #ccc;
+  }
+  .div5{
+    width: 200px;
+    height:100px;
+    /*上 上 下 下/左 右  右 左*/
+    /*border-radius:100px/50px;      水平方向*/
+    border-radius:50% 50%;
+    background-color: #ccc;
+  }
+  .div6{
+    width: 100px;
+    height:200px;
+    /*上 上 下 下/左 右  右 左*/
+    border-radius:50% 50%;
+    background-color: #ccc;
+  }
+  .div7{
+
+    width: 0;
+     border: 100px solid red;
+    /*上 上 下 下/左 右  右 左*/
+    /*border-radius:50% 50%;*/
+     border-left-color: skyblue;
+     border-top-color: purple;
+     border-right-color: orange;
+
+  }
+  .div8{
+    width: 0;
+     border: 100px solid #ccc;
+    /*上 上 下 下/左 右  右 左*/
+    /*border-radius:50% 50%;*/
+
+     /**/
+     border-right-color: transparent;
+    
+  }
+  .div9{
+    width: 0;
+     border: 100px solid #ccc;
+    /*上 上 下 下/左 右  右 左*/
+     border-radius:50%;
+     border-left-color: transparent;
+     /*border-top-color: purple;*/
+     
+  }
+  </style>
+</head>
+<body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+<div class="div7"></div>
+<div class="div8"></div>
+<div class="div9"></div>
+  
+</body>
+</html>

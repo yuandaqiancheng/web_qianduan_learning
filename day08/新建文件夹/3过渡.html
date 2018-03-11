@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+div{
+  width: 0;
+  height: 0;
+  background-color: red;
+  /*宽度变化*/
+  transition-property:width;
+  transition-duration: 2s;
+  /*延迟1s后显示*/
+  /*transition-delay: 1s;*/
+  /*开始慢，后来变快*/
+  transition-timing-function: ease-in;
+  /*transition-timing-function: ease-out;*/
+}
+  div:hover{
+    width:1000px;
+
+  }
+  p{
+    width: 100px;
+    height: 100px;
+    background: orange;
+    /*这样写只会显示最后一个*/
+    /*transition-property: width;
+    transition-property: height;
+    transition-property: background-color;*/
+    transition-property: width,height,background-color;
+    transition-duration: 2s;
+    /*或者等价写法：transition-property: width 2s,height 2s,background-color 2s;*/
+    /*或者transition-property:all 2s*/
+    /*最简单的就是*/
+  }
+  p:hover{
+    width: 400px;
+    height: 400px;
+    background: purple;
+  }
+}
+  </style>
+</head>
+<body>
+  <div></div>
+  <p></p>
+  <p></p>
+</body>
+</html>

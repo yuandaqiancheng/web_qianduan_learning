@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  div{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  </style>
+</head>
+<body>
+     <div></div>
+     <div></div>
+     <div></div>
+</body>
+<script type="text/javascript">
+//命名函数
+  function test(){
+console.log("打印");
+  }
+  test();//调用
+
+  var fn=function(){
+    console.log("函数表达式");
+  }
+  fn();//fn本来是变量，赋值后fn就成了函数名，直接调用
+
+  function sum(value1,value2){
+       // return value1+value2;
+       sum=value1+value2;
+       return sum;
+  }
+   var res=sum(20,33);
+   alert(res);
+
+   function toChange(obj,attr,value){
+    //需要传参数？修改样式，还是先传参数
+    div.style.width="300px";
+    // 不能这样写：obj.style.attr=value;
+    obj.style[attr]=value;
+   }
+
+   var divs=document.getElementsByTagName("div");
+   divs[0].onclick=function(){
+    toChange(divs[0],"width","200px");
+   }
+   divs[1].onclick=function(){
+    toChange(divs[1],"backgroundColor","yellow");
+   }
+   divs[2].onclick=function(){
+    toChange(divs[2],"height","200px");
+   }
+</script>
+</html>

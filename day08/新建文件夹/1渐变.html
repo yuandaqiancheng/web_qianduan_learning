@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  div{
+    width: 200px;
+    height: 200px;
+    border:5px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+  }
+  .grad_1{
+    /*线性渐变,默认从上到下是由红到蓝*/
+    background: linear-gradient(red,blue);
+    /*background: linear-gradient(0deg,red,blue);效果一样*/
+  }
+  .grad_2{
+    /*从左边到右边*/
+    background: linear-gradient(to right,red,blue,red);
+  }
+  .grad_3{
+    /*和grad_1对应，1，默认是180deg，2若改为0，则恰好和1相反方向渐变*/
+    background: linear-gradient(0deg,red,blue);
+  }
+   .grad_4{
+    background: linear-gradient(to bottom left,red 30px,blue 100px);
+    /*其中70px的红色为过渡色*/
+    /*background: linear-gradient(to bottom left,red,blue);*/
+   }
+   .grad_5{
+    background:linear-gradient(to top right,red 40%,blue 70%);
+   }
+   .grad_6{
+    background: -webkit-repeating-linear-gradient(bottom,red 10%,blue 30%);
+    /*此处的bottom表示向着bottom渐变，由红到蓝*/
+   }
+   .radial1{
+    background: -webkit-radial-gradient(red,blue);
+    /*径向渐变,默认由内而外*/
+   }
+   .radial2{
+    background: -webkit-radial-gradient(top left,red,blue);
+   }
+   .radial3{
+    /*固定像素*/
+    background: -webkit-radial-gradient(red 30px,blue 100px);
+  }
+   .radial4{
+    background:-webkit-radial-gradient(red 1%,blue 50%);
+
+   }
+   .radial5{
+    background: -webkit-radial-gradient(ellipse,red 1%,blue 50%);
+    width: 1000px;
+   }
+   .radial6{
+    background: -webkit-radial-gradient(circle,red 1%,blue 50%);
+    width: 1000px;
+   }
+   .radial7{
+    background: -webkit-radial-gradient(red 10%,blue 20%);
+   }
+   .radial8{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border:none;
+    background: -webkit-repeating-radial-gradient(50% 0%,white,black);
+   }
+  </style>
+</head>
+<body>
+<div class="grad_1">grad_1</div>
+<div class="grad_2">grad_2</div>
+<div class="grad_3">grad_3</div>
+<div class="grad_4">grad_4</div>
+<div class="grad_5">grad_5</div>
+<div class="grad_6">grad_6</div>
+<!-- 多个带有选择器的div写法： -->
+<div class="radial1">radial1</div>
+<div class="radial2">radial2</div>
+<div class="radial3">radial3</div>
+<div class="radial4">radial4</div>
+<div class="radial5">radial5</div>
+<div class="radial6">radial6</div>
+<div class="radial7">radial7</div>
+<div class="radial8">radial8</div>
+
+<!-- 注意：若要让圆环的颜色渐变，边框border直接不能设置渐变颜色，要用大的圆套小的圆来写 -->
+  
+</body>
+</html>

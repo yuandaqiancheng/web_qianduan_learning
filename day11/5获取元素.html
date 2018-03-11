@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<div id="div">div1</div>
+<div id="div">div2</div>
+<p name="p">p1</p>
+<p name="p">p2</p>
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  </ul>
+<a href="xxx" class="a">我是a1</a>
+<a href="xxx" class="a">我是a2</a>
+</body>
+<script type="text/javascript">
+  var div = document.getElementById("div");
+  alert(div.innerHTML);
+  var p = document.getElementsByName("p");//带有s表示返回值可以不只有一个，多个，数据类型是数据，要
+  alert(p.length);
+  // alert(p[0].innerHTML);
+  // alert(p[1].innerHTML);
+  var li=document.getElementsByTagName("li");
+ var ul=document.getElementsByTagName("ul")[0];//根据标签名获取
+ alert(ul[0].innerHTML);
+ var a=document.getElementsByClassName("a");//根据类名获取
+ alert(a[1].innerHTML);
+
+</script>
+</html>

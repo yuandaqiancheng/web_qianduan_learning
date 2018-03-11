@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  div{
+    width: 100px;
+    height: 100px;
+    background:#ccc;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    display: none;
+  }
+  .select{
+    background-color: orange;
+  }
+  .show{
+    display: block;
+    /*显示class为show的div*/
+  }
+  </style>
+</head>
+<body>
+  <input type="button" value="按钮1" class="select">
+  <input type="button" value="按钮2">
+  <input type="button" value="按钮3">
+  <input type="button" value="按钮4">
+  <div class="show">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</body>
+<script type="text/javascript">
+  var oInput=document.getElementsByTagName("input");
+  var oDiv=document.getElementsByTagName("div");
+  oInput[0].onclick=function(){
+    for(var i=0;i<oInput.length;i++){
+      // 先清除掉所有
+      oInput[i].className="";
+      oDiv[i].className="";
+    }
+    // 再显示要显示的
+    oInput[0].className="select";
+    oDiv[0].className="show";
+  }
+  oInput[1].onclick=function(){
+    for(var i=0;i<oInput.length;i++){
+      // 先清除掉所有
+      oInput[i].className="";
+      oDiv[i].className="";
+    }
+    // 再显示要显示的
+    oInput[1].className="select";
+    oDiv[1].className="show";
+  }
+  oInput[2].onclick=function(){
+    for(var i=0;i<oInput.length;i++){
+      // 先清除掉所有
+      oInput[i].className="";
+      oDiv[i].className="";
+    }
+    // 再显示要显示的
+    oInput[2].className="select";
+    oDiv[2].className="show";
+  }
+  oInput[3].onclick=function(){
+    for(var i=0;i<oInput.length;i++){
+      // 先清除掉所有
+      oInput[i].className="";
+      oDiv[i].className="";
+    }
+    // 再显示要显示的
+    oInput[3].className="select";
+    oDiv[3].className="show";
+  }
+  
+</script>
+</html>

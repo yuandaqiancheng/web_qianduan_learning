@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script type="text/javascript">
+setInterval(function(){
+  var date=new Date();//创建时间对象
+  var year=date.getFullYear();//获取年份
+  var month=date.getMonth()+1;//获取月份
+  var day=date.getDate();//获取多少号
+  var week=date.getDay();//获取星期
+  var hour=date.getHours();
+  var min=date.getMinutes();
+  var sec=date.getSeconds();
+  document.body.innerHTML="";//设置innerHTML，相当于清空了body
+  document.write("年份:"+year+"<br>");
+  document.write("月份:"+month+"<br>");
+  document.write("日:"+day+"<br>");
+  document.write("星期:"+week+"<br>");
+  document.write("时:"+hour+"<br>");
+  document.write("分:"+min+"<br>");
+  document.write("秒:"+sec+"<br>");
+},1000)
+ 
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+       <script type="text/javascript">
+         var b1=true;
+         console.log(Number(b1));
+         var b2=false;
+         console.log(Number(b2));
+         var num3=12;
+         console.log(Number(num3));//本来是数值类型，转换后还是12
+         var a3="123456"+1;//字符串拼接
+        var nmu4=Number(a3)+1;//输出123457
+         console.log(typeof a3);
+         console.log(typeof num4);
+
+         var num5="12.345";
+         console.log(Number(num5));
+         var num6="12.345aq";
+         console.log(Number(num6));//Not a Number
+         //console.log(parselnt(num6));错误写法
+         var num7="";
+         console.log(Number(num7));//控制台输出0
+
+         //var nmuber=div.style.width;
+         //alert(number);
+         var num8="300px";
+         console.log(parseInt(num8));
+         console.log(parseFloat(num6));
+
+         var num9="aq12.345";//输出NaN，aq位置不同而得到不同,只显示aq前面的
+         var num10="12.345aq";
+         console.log(parseFloat(num9));//12
+         console.log(parseFloat(num10));//
+         console.log(parselnt(num10));
+
+
+
+       </script>
+  
+</body>
+</html>

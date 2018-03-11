@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
+  <style type="text/css">
+  html,body{
+    margin:0;
+    padding: 0;
+    background-color: black;
+    opacity: 0.8;
+ }
+      .wrap{
+          width: 100px;
+          height: 350px;
+          margin: 250px auto;
+          transform-style: preserve-3d;
+          perspective:3500px;
+          animation-name: change_1,change_2,change_3,change_4,change_5,change_6,change_7,change_8,change_9,change_11;
+        }
+       .wrap div{
+        position: absolute;
+       
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 200px;
+        -webkit-box-reflect:below 10px -webkit-linear-gradient(rgba(255,255,255,0),
+                                                                                           rgba(255,255,255,0.25),
+                                                                                          rgba(255,255,255,0.5));
+      border:1px solid rgba(0,255,255,0.5);
+      box-shadow: 0px 0px 10px rgba(0,255,255,0.5),
+      0px 0px 20px rgba(0,255,255,0.5),
+      0px 0px 30px rgba(0,255,255,0.5),
+      0px 0px 10px rgba(0,255,255,0.5),
+      0px 0px 20px rgba(0,255,255,0.5) inset,
+      0px 0px 35px rgba(0,255,255,0.5) inset,
+      0px 0px 50px rgba(0,255,255,0.5) inset;
+      }
+       
+
+      .wrap img{
+        width: 100%;
+        height: 100%;
+       
+      }
+      .wrap div img:hover{
+        transform: scale(3);
+      }
+
+      .wrap:nth-child(n){
+        
+        animation-name: change_11;
+        animation-delay: 8.5s;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        
+      }
+      .wrap:nth-child(n):hover{
+        animation-play-state: paused;
+      }
+      .wrap div:nth-child(2){
+
+        animation-name: change_1;
+        animation-duration: 0.1s; 
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+          /*transform-origin: left;*/
+          
+      }
+      .wrap div:nth-child(3){
+          animation-name: change_2;
+          animation-duration: 0.1s;
+          animation-delay: 2.1s;
+          animation-fill-mode: forwards;
+          /*transform-origin: left;*/
+          
+      }
+      .wrap div:nth-child(4){
+          animation-name: change_3;
+          /*animation-duration: 1.5s;*/
+          animation-duration: 0.1s;
+          animation-delay: 3.2s;
+          animation-fill-mode: forwards;
+          /*transform-origin: left;*/
+          
+      }
+      .wrap div:nth-child(5){
+          animation-name: change_4;
+          /*animation-duration: 2s;*/
+          animation-duration: 0.1s;
+          animation-delay: 4.3s;
+          animation-fill-mode: forwards;
+          /*transform-origin: left;*/
+          
+      }
+      .wrap div:nth-child(6){
+         animation-name: change_5;
+          /*animation-duration: 2.5s;*/
+          animation-duration: 0.1s;
+          animation-delay: 5.4s;
+          animation-fill-mode: forwards;
+          /*transform-origin: left;*/
+          
+      }
+      .wrap div:nth-child(7){
+         animation-name: change_6;
+          /*animation-duration: 3s;*/
+          animation-duration: 0.1s;
+          animation-delay: 6.5s;
+          animation-fill-mode: forwards;
+          /*transform-origin: left;*/
+          
+      }
+      .wrap div:nth-child(8){
+          animation-name: change_7;
+          animation-duration: 0.1s;
+          animation-delay: 7.6s;
+          animation-fill-mode: forwards;
+         
+          
+      }
+      
+      .wrap div:nth-child(9){
+          animation-name: change_8;
+          animation-duration: 0.1s;
+          animation-delay: 8.7s;
+          animation-fill-mode: forwards;
+      }
+      .wrap div:nth-child(1){
+         animation-name: change_9;
+         animation-duration: 0.1s;
+          animation-delay: 9.8s;
+          animation-fill-mode: forwards;
+        }
+     
+ 
+      
+      @-webkit-keyframes change_1{
+        0%{transform: rotateX(0deg) rotateY(0);}
+      
+        100%{transform:rotateY(40deg) translateZ(300px);}
+        
+      }
+
+      @-webkit-keyframes change_2{
+        0%{transform: rotateX(0deg) rotateY(0);}
+        
+        100%{transform:rotateY(80deg) translateZ(300px);}
+        
+      }
+      @-webkit-keyframes change_3{
+        0%{transform: rotateX(0deg) rotateY(0);}
+      
+        100%{transform:rotateY(120deg) translateZ(300px);}
+      
+      }
+      @-webkit-keyframes change_4{
+        0%{transform: rotateX(0deg) rotateY(0);}
+     
+        100%{transform:rotateY(160deg) translateZ(300px);}
+      
+      }
+      @-webkit-keyframes change_5{
+        0%{transform: rotateX(0deg) rotateY(0);}
+      
+        100%{transform:rotateY(200deg) translateZ(300px);}
+      
+      }
+      @-webkit-keyframes change_6{
+        0%{transform: rotateX(0deg) rotateY(0);}
+      
+        100%{transform:rotateY(240deg) translateZ(300px);}
+      
+      }
+      @-webkit-keyframes change_7{
+        0%{transform: rotateX(0deg) rotateY(0);}
+      
+        100%{transform:rotateY(280deg) translateZ(300px);}
+      
+      }
+      @-webkit-keyframes change_8{
+        0%{transform: rotateX(0deg) rotateY(0);}
+      
+        100%{transform:rotateY(320deg) translateZ(300px);}
+      
+      }
+      @-webkit-keyframes change_9{
+        0%{transform: rotateX(0deg) rotateY(0);}
+       
+        100%{transform:rotateY(360deg) translateZ(300px);}
+      
+      }
+      @-webkit-keyframes change_11{
+      0%{transform:rotateX(0deg) rotateY(0deg) translateZ(300px);}
+      20%{transform:rotateX(30deg) rotateY(0deg) translateZ(300px);}
+      40%{transform:rotateX(0deg) rotateY(0deg) translateZ(300px);}
+      60%{transform:rotateX(30deg) rotateY(180deg) translateZ(300px);}
+      80%{transform:rotateX(0deg) rotateY(180deg) translateZ(300px);}
+      100%{transform:rotateX(0deg) rotateY(0deg) translateZ(300px);}
+      }
+     
+
+     
+
+  </style>
+
+</head>
+<body>
+<div class="wrap">
+  <div><img src="img/1.jpeg" alt=""></div>
+  <div><img src="img/2.jpeg" alt=""></div>
+  <div><img src="img/3.jpeg" alt=""></div>
+  <div><img src="img/4.jpeg" alt=""></div>
+  <div><img src="img/5.jpeg" alt=""></div>
+  <div><img src="img/6.jpeg" alt=""></div>
+  <div><img src="img/7.jpeg" alt=""></div>
+  <div><img src="img/8.jpeg" alt=""></div>
+  <div><img src="img/9.jpeg" alt=""></div>
+</div>
+  
+</body>
+</html>

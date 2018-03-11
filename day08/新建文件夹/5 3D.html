@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+ div{
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  margin: 20px;
+  transition: 1s;
+ }
+ /*.wrap层表示可以应用3D的层，需要单独用一层*/
+ .wrap{
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: 2s;
+  /*啥意思?*/
+  /*perspective:1000px;*/
+ }
+ .a:hover{
+  transform: rotateX(180deg);
+ }
+ .b:hover{
+  transform: rotateY(180deg) rotateX(180deg);
+ }
+ .c:hover{
+  transform: rotateZ(180deg);
+ }
+ .d:hover{
+  transform:scaleX(1.5);
+ }
+ .e:hover{
+  transform: scaleY(1.5);
+ }
+ .f:hover{
+ transform: translateX(200px);
+ }
+ .g:hover{
+  transform: translateY(100px);
+ }
+.h:hover{
+  transform: translateZ(100px);
+}
+  </style>
+
+</head>
+<body>
+<div class="a">rotateX</div><br><br>
+<div class="b">rotaetY</div><br><br>
+<div class="c">rotateZ</div><br><br>
+<div class="d">scaleX</div><br><br>
+<div class="e">scaleY</div><br><br>
+<!-- scaleZ写了基本没有反应，一般基本不用 -->
+<!-- translate表示移动 -->
+<div class="f">translateX</div><br><br>
+<div class="g">translateY</div><br><br>
+
+<!-- <div class="h">translateY</div> -->
+<div class="wrap">
+  <div class="h">translateZ</div>
+</div>
+
+ 
+  
+</body>
+</html>

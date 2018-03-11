@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <title></title>
+  <style type="text/css">
+  div{
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    animation-name: change;
+    animation-duration: 2s;
+    /*animation-delay: 2s;*/
+    /*forward：不回来；backwards:回到初始定位的位置，会先执行0%时的动画帧；both两者都*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-fill-mode: backwards;*/
+    animation-fill-mode: both;
+    /*从初始位置做两次运动，结合下一句就是一个来回*/
+     animation-direction: alternate;
+    animation-iteration-count: infinite;
+   
+
+
+  }
+  div:hover{
+    animation-play-state: paused;
+  }
+  /*过渡动画能做的，关键帧动画都能做*/
+  @-webkit-keyframes change{
+    0%{
+      background-color: cyan;
+      transform: translate(-100px) rotateZ(0);
+    }
+    /*25%{
+      background-color: red;
+      transform: translate(100px) rotateZ(90deg);
+    }
+    50%{
+      background-color: blue;
+      transform: translate(300px) rotateZ(180deg);
+    }
+    75%{
+      background-color: green;
+      transform: translate(500px) rotateZ(270deg);
+    }*/
+    100%{
+      background-color: yellow;
+      transform: translate(700px) rotateZ(360deg);
+      border-radius: 100px;
+    }
+  }
+  </style>
+ 
+</head>
+<body>
+  <div></div>
+  
+</body>
+</html>

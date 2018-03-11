@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  .wrap{
+    width: 500px;
+    height: 400px;
+    border:5px solid #ccc;
+    /**/
+    overflow: hidden;
+  }
+.inner{
+width: 2000px;
+position: relative;
+
+left: 0;
+transition: 1s;
+}
+
+.inner div{
+
+width: 500px;
+height: 400px;
+background-color: #ccc;
+font-size: 50px;
+text-align: center;
+line-height: 400px;
+float: left;
+  }
+  </style>
+</head>
+<body>
+<!-- 标签内容用{}， -->
+<div class="wrap">
+  <div class="inner">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+</div>
+  <input type="button" value="上一张">
+  <input type="button" value="下一张">
+</body>
+<script type="text/javascript">
+  var input=document.getElementsByTagName("input");
+  var inner=document.getElementsByClassName("inner")[0];
+  var left=0;
+  input[0].onclick=function(){
+    left+=500;
+    if(left>0){
+      left=-1500;
+    }
+    inner.style.left=left+"px";
+  }
+   input[1].onclick=function(){
+    left-=500;
+    if(left<-1500){
+      left=0;
+    }
+    inner.style.left=left+"px";
+  }
+
+
+</script>
+</html>

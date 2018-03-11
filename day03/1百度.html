@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>百度一下，你就知道</title>
+  <style type="text/css">
+  .header{
+    text-align: right;
+  }
+  .header a{
+    margin:0 20px 0 0;        
+  }
+  .content{
+    margin-top: 150px;
+    text-align: center;
+  }
+  .content img{
+    width: 270px;
+    margin-bottom: 30px;
+  }
+  .content .txt{
+    width: 540px;
+    height: 30px;
+  }
+  .content .btn{
+    width: 100px;
+    height: 36px;
+    border: none;
+    color: white;
+    background-color: #3584fb;
+
+  }
+  .footer{
+    margin-top: 300px;
+    text-align: center;
+  }
+  .footer div{
+    /*inline-block为设置同一行内的块元素，它的作用：使得footer div内的a，span等行标签能够设置高度，既具有 block 元素可以设置宽高的特性，同时又具有 inline 元素默认不换行的特性*/
+    display: inline-block;  
+    margin-right: 30px;  
+  }
+  .p{
+    /*消除p的默认间距*/
+    margin: 0;
+  }
+  .p1 a{
+    margin-left:62px; 
+  }
+  .p1 .first{
+    margin: 0;
+  }
+  </style>
+</head>
+<body>
+            <div class="header">
+                    <a href="xxx">新闻</a>
+                    <a href="xxx">hao123</a>
+                    <a href="xxx">地图</a>
+                    <a href="xxx">视频</a>
+                    <a href="xxx">贴吧</a>
+                    <a href="xxx">学术</a>
+                    <a href="xxx">登陆</a>
+                    <a href="xxx">设置</a>
+                    <a href="xxx">更多产品</a>
+            </div>
+            <div class="content">
+                    <div>
+                      <img src="img/bd_logo1副本.png" alt="">
+                    </div>
+                    <form action="http://www.baidu.com/s">    <!-- 表单直接用form包，不用div包-->
+                      <input type="text" name=""  class="txt">
+                      <input type="submit" value= "百度一下"  class="btn">
+                    </form>
+            </div>
+            <div class="footer">
+                    <div>
+                      <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_efde696.png" alt="">           
+                    </div>
+                    <div>
+                      <span>
+                        手机百度
+                      </span>
+                      <p>
+                        百度一下
+                      </p>
+                    </div>
+
+                    <div>
+                      <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_efde696.png" alt="">           
+                    </div>
+                    <div>
+                      <span>
+                        手机百度
+                      </span>
+                      <p>
+                        快人一步
+                      </p>
+                    </div>
+                    <div>
+                      <p class="p1">
+                        <a href="xxx" class="first">把百度设为首页</a>
+                        <a href="xxx">关于百度</a>
+                        <a href="xxx">About Baidu</a>
+                      </p>
+                      <p>
+                        @2017 Baidu
+                        <a href="xxx">关于百度</a>
+                        <a href="xxx">About Baidu</a>
+                       京ICP证030173号
+                      </p>
+                      <p style="text-align: left;">京公网安备11000002000001号</p>
+                    </div>
+                    
+              
+            </div>
+  
+</body>
+</html>

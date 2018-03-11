@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script type="text/javascript">
+  setInterval(function(){
+    var date=new Date();
+    var d=new Date("2017-10-1");
+    //除不尽用parseInt
+    var time=parseInt((d-date)/1000);//剩下多少秒
+    var day=parseInt(time/86400);
+    var h=parseInt(time%86400/3600);
+    var min=parseInt((time%86400-h*3600)/60);
+    var min=parseInt(time%3600/60);
+    var sec=parseInt(time%60);
+    document.body.innerHTML="距离国庆节放假时间还有:"+day+"天-"+h+"小时-"+min+"分-"+sec+"秒";
+  },1000)
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  
+</body>
+<script type="text/javascript">
+   // var res=sum(1,2);
+   var i=0;
+  //循环定时器：隔多少秒后触发
+  var timer=setInterval(function(){
+   i++;
+   if(i>5){
+    clearInterval(timer);
+   }
+   else {
+    alert("自从来了广州，他一天胖"+i*50+"斤");
+   }
+  },1000)     //1000是以毫秒为单位,1s=1000ms
+
+  //一次性定时器
+  setTimeout(function(){
+    alert("一次性定时器");
+  },6000)
+</script>
+</html>

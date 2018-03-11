@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<div id="div">这是一个div</div>
+</body>
+       <script type="text/javascript">
+         /*1.基本数据类型
+            undefined
+            Null
+            Boolean(true/false)
+            Number
+            String
+
+             2.对象类型
+             object
+        */
+          var a,b;
+          alert(a);
+
+           // 或者
+           var a=10;
+           // var a="10"
+           // 输出a的类型，
+           alert(typeof a);
+
+           alert(a==b);
+           alert(a=="undefined");
+
+           var obj =null;
+           var num1=10;
+           var num2=039;
+           alert(num2);//输出39
+
+           var num3=0xa1;//16进制
+
+           var str="123";
+           alert(str);
+           var str2="123"+45;//这是可以的：任何类型跟字符串相加结果都是字符型
+           alert(str2);
+           /*int a= 45;
+           string b=*/
+
+           var obj={
+            name:"zhangsan",
+            age:18,
+            run:function(){
+                alert("我会跑步");
+            }
+           }
+           alert(obj.name);//访问对象类型数据
+           alert(obj.age);
+           obj.run();
+
+           var oDiv=document.getElementById("div");//获取页面元素
+           //get
+           var string=oDiv.innerHTML;//拿到获取body后的当前标签div内部的文字
+           //set
+           oDiv.innerHTML="呵呵哒";//设置
+           alert(string);
+           alert(typeof string);
+           alert(typeof oDiv);
+
+       </script>
+  
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script type="text/javascript">
+  var  score=90;
+  if(score>=90){
+    alert("奖励一包辣条");
+  }
+  else{
+  alert("没有奖励");
+  }
+
+  var a=12;
+  var b=13;
+  var c=34;
+  var max=a;
+  if(b>=max){
+    max=b;
+  }
+    if(c>=max){
+      max=c;
+    }
+    
+   /* if(a>=b)
+    {
+      max=a;
+    }
+    if(c>=a)
+      {
+        max=c;
+      }
+    */
+
+  if(score>=90){
+    console.log("成绩优秀");
+    else if(score>=60&&score<90){
+      console.log("成绩良好");
+
+    }
+    else{
+      console.log("不及格")；
+    }
+  }
+
+  var friut="orange";
+  switch(friut){
+    case"orange";
+    alert("橙子");
+    break;
+    case"apple";
+    alert("苹果");
+    break;
+    case"banana";
+    alert("香蕉");
+    break;
+    default;
+    alert("不知道是啥");
+    break;
+    // 一定要加break，不然会一直查找并且一直输出
+  }
+
+  // 三目运算
+  var y1=12,y2=13,y3=14;
+  var max1=y1>y2? y1:y2;
+  var max2=max1>y3? max1:y3;
+
+</script>
+</html>

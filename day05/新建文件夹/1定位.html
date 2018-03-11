@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+        <style type="text/css">
+            .wrap{
+              width: 500px;
+              /*居中*/
+              margin:auto;
+              border:5px solid black;
+            }
+            .header{
+              /*width: 500px;*/
+              height: 100px;
+              background-color: black;
+            }
+            .content{
+              width: 500px;
+              height: 500px;
+              background-color: yellow;
+              /*position: absolute;若父元素加上绝对定位，会使得wrap框收缩，则子元素用了absolute，其父元素用relative*/
+              position: relative;
+
+            }
+            .con1{
+              width: 100px;
+              height: 100px;
+              background-color: red;
+              position: absolute;
+              /*当父级没有定位时，一直找到body(即是整个文档)进行定位；若父级content有定位则*/
+              left: 50%;
+              top: 50%;
+              /*为了移到正中间，左和上的margin各减去宽和高的一半*/
+              margin-left: -50px;
+              margin-top: -50px;
+             
+            }
+            .con2{
+              width: 100px;
+              height: 100px;
+              background-color: orange;
+            }
+            .footer{
+              height: 100px;
+              background-color: #ccc;
+            }
+            
+        </style>
+</head>
+<body>
+            <div class="wrap">
+              <div class="header"></div>
+              <div class="content">
+                <div class="con1"></div>
+                <div class="con2"></div>
+              </div>
+              <div class="footer"></div>
+            </div>
+</body>
+</html>

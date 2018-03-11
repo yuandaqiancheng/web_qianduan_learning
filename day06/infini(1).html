@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  *{
+    margin: 0;
+    padding: 0;
+
+  }
+  .header{
+    height: 75px;
+    opacity: 0.75;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: rgb(0,0,0);
+
+  }
+  .header .logo{
+    margin-bottom: 10px;
+  }
+  .header img{
+    width: 136px;
+    height: 44px;
+  }
+  .nav a{
+    margin-left: 180px;
+    color: #898989;
+    text-decoration: none;
+  }
+  .nav .first{
+    margin-left: 0;
+  }
+  .content{
+    width: 1100px;
+    margin: 30px auto 0;
+  }
+  .content img{
+    width: 1100px;
+  }
+  .content ul{
+    text-align: center;
+  }
+  .content ul li{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #999;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+  .content .p1{
+    font-size: 18px;
+    text-indent: 2em;
+    border-top:1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    font-family: STKaiti;
+    /*why?*/
+    line-height: 30px;
+
+
+  }
+  .content .logos{
+     margin-top: 30px;
+     text-align: center;
+  }
+  .content .logos img{
+    width: 50px;
+    margin: 0 10px;
+  }
+  .work{
+    margin-top: 50px;
+ }
+ .work:after{
+  content: "";
+  display: inline-block;
+  clear: both;
+ }
+ .work a{
+  /*当使用浮动的时候，该元素被默认的拥有块元素的的属性*/
+  float: left;
+  width: 350px;
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  overflow: hidden;
+ }
+ .work img{
+  width: 350px;
+ }
+ .work a span{
+display: inline-block;
+width: 350px;
+background: white;
+font-size: 18px;
+line-height: 25px;
+
+ }
+
+ .work  .middle{
+  margin: 0 25px;
+  margin-bottom: 25px;
+ }
+ .footer{
+background-color: #e0e0e0;
+padding-top: 10px 0;
+ }
+ .footer .left{
+  float: left;
+  width: 700px;
+  text-align: center;
+  margin-right: 10px;
+ }
+ .footer .left img{
+  width: 30px;
+  margin-left: 6px;
+ }
+ .footer .right{
+  float: left;
+  padding-left: 20px;
+  line-height: 20px;
+  border:1px solid #bcbcbc;
+ }
+ .footer .right img{
+  width: 143px;
+ }
+ .footer .right p{
+  font-size: 12px;
+ }
+ .footer:after{
+  content: "";
+  display: block;
+  clear: both;
+ }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="logo">
+      <img src="img2/title_logo.png">
+    </div>
+    <div class="nav">
+      <a href="" class="first">HOME</a>
+      <a href="">WORK</a>
+      <a href="">CONTACT</a>
+      <a href="">JOIN US</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="bogImg">
+      <img src="img2/theme.jpg">
+    </div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <p class="p1">Infini Studio (映纷创意)是一家创意机构，专注于品质型动画影像的创意与设计。我们使用设计、绘画、动画、特效及多种创新形式，以动态视觉语言对品牌与内容进行创意呈现。并由动画导演、设计师、插画师、三维艺术家等共同协作完成。
+    </p>
+    <div class="logos">
+      <img src="img2/1.jpg" alt="">
+      <img src="img2/2.jpg" alt="">
+      <img src="img2/3.jpg" alt="">
+      <img src="img2/4.jpg" alt="">
+      <img src="img2/5.jpg" alt="">
+      <img src="img2/6.jpg" alt="">
+      <img src="img2/7.jpg" alt="">
+      <img src="img2/8.jpg" alt="">
+      <img src="img2/9.jpg" alt="">
+      <img src="img2/10.jpg" alt="">
+      <img src="img2/11.jpg" alt="">
+      <img src="img2/12.jpg" alt="">
+      <img src="img2/13.jpg" alt="">
+      <img src="img2/14.jpg" alt="">
+    </div>
+    <div class="work"></div>
+    <a href="###"><img src="img2/yicheHD.jpg">
+    <span>小米创意海报</span></a>
+    <a href="###"><img src="img2/yicheHD.jpg">
+    <span>小米创意海报</span></a>
+    <a href="###"><img src="img2/yicheHD.jpg">
+    <span>小米创意海报</span></a>
+    <a href="###"><img src="img2/yicheHD.jpg">
+    <span>小米创意海报</span></a>
+    <a href="###"><img src="img2/yicheHD.jpg">
+    <span>小米创意海报</span></a>
+    <a href="###"><img src="img2/yicheHD.jpg">
+    <span>小米创意海报</span></a>
+  </div>
+  <div class="footer">
+    <div class="left">
+      <img src="img2/contact1.jpg" alt="">
+      <img src="img2/contact2.jpg" alt="">
+      <img src="img2/contact3.jpg" alt="">
+    </div>
+    <div class="right">
+      <div class="footer_logo">
+        <img src="img2/footer_logo.jpg">
+      </div>
+      <div>
+       <p>Infini Studio | 映纷创意</p>
+       <p>北京市朝阳区常营未来时大厦706</p>
+       <p>TEL : 010-85394331</p>
+       <p>QQ : 7585917</p>
+       <p>Email : infinistudio@foxmail.com</p>
+       <p>weibo : @InfiniStudio</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>

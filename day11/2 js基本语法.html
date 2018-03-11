@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+            <script type="text/javascript">
+              // c语言是强类型语言，js不是，变量的统一申明用var：var 变量名=值（变量名：不能用关键字，数字）
+              var a =123;
+              a="123";   //此处如果是c语言，int b="123"错误，前面是整型int 4字节，而后面是字符型
+              var A =12.2;
+
+              var name ="张三";
+              var age =18;
+
+              // 驼峰命名法
+              var someoneName;
+              // 匈牙利命名法:属性+类型+描述
+              var someoneName;
+              var oDiv;
+
+              var a;
+              var b;
+              var c;
+              // 上面三个申明变量方式等价于下面的这一句
+              var a,b,c;
+              
+              // 字符串类型
+              var str="老年人需要拐杖，请问制拐杖吗？";
+              // 打印到控制台，用于程序员调试用，不显示在页面
+              console.log(str);
+              //加了引号的话，直接打印引号里面的内容
+              console.log("str");
+              
+              // 带有取消的弹框
+              confirm("请输入你的名字?");
+              // 这是在js语句中加入h1标签
+              document.write("<h1>这是通过js往页面上添加的文字</h1>");
+            </script>
+  
+</body>
+</html>

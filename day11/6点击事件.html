@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  </style>
+</head>
+<body>
+  <button>点击</button>
+  <div>touch me</div>
+</body>
+<script type="text/javascript">
+  var div=document.getElementsByTagName("div")[0];//先获取
+  div.onclick=function(){
+    alert("tell me why you youch me");
+    // set：将某个样式
+    //set:    .语法出现在复制符号（=）左边的全是set，出现在其他地方的都是get，
+    div.style.backgroundColor="orange";//js里面修改css样式，此处改变颜色是因为权重值大覆盖，不写横杠，c大写
+    //get
+    var color=div.style.backgroundColor;
+    alert(div.style.backgroundColor);
+    //div.style.display:none;
+}
+var button=document.getElementsByTagName("button")[0];//先获取
+   button.onclick=function(){
+    var Display=div.style.display;
+    // var Display=false;
+    if (Display=="block") {
+      div.style.display="none";
+      // console.log(Display);
+    }
+    else{
+       div.style.display="block";
+       // console.log(Display);
+    }
+   }
+   
+
+</script>
+</html>

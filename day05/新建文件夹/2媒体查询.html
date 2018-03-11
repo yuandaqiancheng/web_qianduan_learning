@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  html,body{
+    font-size: 100px;
+}
+  ul{
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+  }
+  ul:before{
+    content: "屏幕宽度大于1200px的："
+  }
+  a{
+    text-decoration:none;
+    color: white;
+  }
+  /*媒体查询，很重要对于响应式布局*/
+  @media screen and (max-width:519px)
+  {
+    ul{font-size: 0.3rem;
+      background-color: pink;
+    }
+    ul:before{content: "屏幕宽度小于519px:"}
+  }
+  @media screen and (min-width: 520px) and (max-width: 699px)
+  {
+    ul{
+      font-size: 0.4rem;
+      background-color: skyblue;
+    }
+    ul:before{
+      content: "屏幕宽度在520-699px:";
+    }
+    a{
+      padding-left: 30px;
+      background: url(img/1142188.gif) left center no-repeat;   
+    }
+  } 
+  @media screen  and (min-width: 700px)
+  {
+    ul{
+      font-size: 1rem;
+      background-color: gray;
+    }
+    ul:before{
+      content: "屏幕宽度大于700px:";
+    }
+  }
+  </style>
+ 
+</head>
+<body>
+        <ul>
+          <li><a href="###">send email</a></li>
+          <li><a href="###">send email</a></li>
+          <li><a href="###">send email</a></li>
+        </ul>
+</body>
+</html>

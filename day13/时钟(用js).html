@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+      <style type="text/css">
+      html,  body{
+        margin: 0;
+        padding: 0;
+        background-color: #3b3b3b;
+      }
+      .out{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        /*background-color: #a3a3a3;*/
+        background-color: #3b3b3b;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -250px;
+        margin-top: -250px;
+        text-align: center;
+        box-shadow: 0px 0px 150px #98604a;
+       /* background: linear-gradient(to right,#a3a3a3,#f2f2f2,#a3a3a3);*/
+        background: linear-gradient(to right,#a3a3a3,white,#a3a3a3);
+
+      }
+      .inner{
+        width: 470px;
+        height: 470px;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-top: 15px;
+        background-color: white;
+        position: absolute;
+        z-index: 0;
+      }
+      .inner .little{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 215px;
+        margin-top: 215px;
+        background-color: black;
+        position: absolute;
+        z-index: 5;
+      }
+      .inner .little div{
+        width: 14px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        margin-left: 13px;
+        margin-top: 19px;
+       
+      }
+      .inner .little div:nth-child(1){
+        transform: rotateZ(0deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(2){
+        transform: rotateZ(6deg) translate(228px);
+      }
+      .inner .little div:nth-child(3){
+        transform: rotateZ(12deg) translate(228px);
+      }
+      .inner .little div:nth-child(4){
+        transform: rotateZ(18deg) translate(228px);
+      }
+      .inner .little div:nth-child(5){
+        transform: rotateZ(24deg) translate(228px);
+      }
+      .inner .little div:nth-child(6){
+        transform: rotateZ(30deg) translate(228px);
+         height: 6px;
+      }
+      .inner .little div:nth-child(7){
+        transform: rotateZ(36deg) translate(228px);
+      }
+      .inner .little div:nth-child(8){
+        transform: rotateZ(42deg) translate(228px);
+      }
+      .inner .little div:nth-child(9){
+        transform: rotateZ(48deg) translate(228px);
+      }
+      .inner .little div:nth-child(10){
+        transform: rotateZ(54deg) translate(228px);
+      }
+      .inner .little div:nth-child(11){
+        transform: rotateZ(60deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(12){
+        transform: rotateZ(66deg) translate(228px);
+         
+      }
+      .inner .little div:nth-child(13){
+        transform: rotateZ(72deg) translate(228px);
+      }
+      .inner .little div:nth-child(14){
+        transform: rotateZ(78deg) translate(228px);
+      }
+      .inner .little div:nth-child(15){
+        transform: rotateZ(84deg) translate(228px);
+      }
+      .inner .little div:nth-child(16){
+        transform: rotateZ(90deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(17){
+        transform: rotateZ(96deg) translate(228px);
+      }
+      .inner .little div:nth-child(18){
+        transform: rotateZ(102deg) translate(228px);
+      }
+      .inner .little div:nth-child(19){
+        transform: rotateZ(108deg) translate(228px);
+      }
+      .inner .little div:nth-child(20){
+        transform: rotateZ(114deg) translate(228px);
+      }
+      .inner .little div:nth-child(21){
+        transform: rotateZ(120deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(22){
+        transform: rotateZ(126deg) translate(228px);
+      }
+      .inner .little div:nth-child(23){
+        transform: rotateZ(132deg) translate(228px);
+      }
+      .inner .little div:nth-child(24){
+        transform: rotateZ(138deg) translate(228px);
+      }
+      .inner .little div:nth-child(25){
+        transform: rotateZ(144deg) translate(228px);
+      }
+      .inner .little div:nth-child(26){
+        transform: rotateZ(150deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(27){
+        transform: rotateZ(156deg) translate(228px);
+      }
+      .inner .little div:nth-child(28){
+        transform: rotateZ(162deg) translate(228px);
+      }
+      .inner .little div:nth-child(29){
+        transform: rotateZ(168deg) translate(228px);
+      }
+      .inner .little div:nth-child(30){
+        transform: rotateZ(174deg) translate(228px);
+      }
+      .inner .little div:nth-child(31){
+        transform: rotateZ(180deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(32){
+        transform: rotateZ(186deg) translate(228px);
+      }
+      .inner .little div:nth-child(33){
+        transform: rotateZ(192deg) translate(228px);
+      }
+      .inner .little div:nth-child(34){
+        transform: rotateZ(198deg) translate(228px);
+      }
+      .inner .little div:nth-child(35){
+        transform: rotateZ(204deg) translate(228px);
+      }
+      .inner .little div:nth-child(36){
+        transform: rotateZ(210deg) translate(228px);
+         height: 6px;
+      }
+      .inner .little div:nth-child(37){
+        transform: rotateZ(216deg) translate(228px);
+      }
+      .inner .little div:nth-child(38){
+        transform: rotateZ(222deg) translate(228px);
+      }
+      .inner .little div:nth-child(39){
+        transform: rotateZ(228deg) translate(228px);
+      }
+      .inner .little div:nth-child(40){
+        transform: rotateZ(234deg) translate(228px);
+      }
+      .inner .little div:nth-child(41){
+        transform: rotateZ(240deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(42){
+        transform: rotateZ(246deg) translate(228px);
+      }
+      .inner .little div:nth-child(43){
+        transform: rotateZ(252deg) translate(228px);
+      }
+      .inner .little div:nth-child(44){
+        transform: rotateZ(258deg) translate(228px);
+      }
+      .inner .little div:nth-child(45){
+        transform: rotateZ(264deg) translate(228px);
+      }
+      .inner .little div:nth-child(46){
+        transform: rotateZ(270deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(47){
+        transform: rotateZ(276deg) translate(228px);
+      }
+      .inner .little div:nth-child(48){
+        transform: rotateZ(282deg) translate(228px);
+      }
+      .inner .little div:nth-child(49){
+        transform: rotateZ(288deg) translate(228px);
+      }
+      .inner .little div:nth-child(50){
+        transform: rotateZ(294deg) translate(228px);
+      }
+      .inner .little div:nth-child(51){
+        transform: rotateZ(300deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(52){
+        transform: rotateZ(306deg) translate(228px);
+      }
+      
+      .inner .little div:nth-child(53){
+        transform: rotateZ(312deg) translate(228px);
+      }
+      .inner .little div:nth-child(54){
+        transform: rotateZ(318deg) translate(228px);
+      }
+      .inner .little div:nth-child(55){
+        transform: rotateZ(324deg) translate(228px);
+      }
+      .inner .little div:nth-child(56){
+        transform: rotateZ(330deg) translate(228px);
+        height: 6px;
+      }
+      .inner .little div:nth-child(57){
+        transform: rotateZ(336deg) translate(228px);
+      }
+      .inner .little div:nth-child(58){
+        transform: rotateZ(342deg) translate(228px);
+      }
+      .inner .little div:nth-child(59){
+        transform: rotateZ(348deg) translate(228px);
+      }
+      .inner .little div:nth-child(60){
+        transform: rotateZ(354deg) translate(228px);
+      }
+      .inner .little div span{
+        position: absolute;
+        margin-left: -30px;
+        margin-top: -20px;
+        font-size: 50px;
+        font-family: "微软雅黑";
+        display: block;
+      }
+      .out .inner #h{
+        position: absolute;
+        width: 160px;
+        height: 10px;
+        background-color: #fcb11d;
+        margin-left: 200px;
+        margin-top: 230px;
+        z-index: 1;
+         /*transform: rotateZ(-90deg);后面有js，对显示的没有效果*/
+        transform-origin: 35px;
+        /*animation:anim_h 43200s linear infinite; */
+      }
+      .out .inner #m{
+        position: absolute;
+        width: 180px;
+        height: 8px;
+        background-color: #fec8d2;
+        margin-left: 200px;
+        margin-top: 231px;
+        z-index: 2;
+         
+        transform-origin: 35px;
+        /*animation:anim_min 3600s  steps(60)infinite;  */
+      }
+      .out .inner #s{
+        position: absolute;
+        width: 200px;
+        height: 6px;
+        background-color: #8a0088;
+        margin-left: 200px;
+        margin-top: 232px;
+        z-index: 3;
+        
+         transform-origin: 35px;
+        /*animation:anim_sec 60s steps(60) infinite;  */
+      }
+      </style>
+</head>
+<body>
+  <div class="out">
+    <div class="inner">
+       <div id="h"></div>
+       <div id="m"></div>
+       <div id="s"></div>
+     
+      <div class="little">
+         <div><span style="transform: rotateZ(0deg);">3</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-30deg);">4</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-60deg);">5</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-90deg);">6</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-120deg);">7</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-150deg);">8</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-180deg);">9</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-210deg); margin-left: -55px;">10</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-240deg);margin-left: -55px;">11</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-270deg);margin-left: -55px;">12</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-300deg);">1</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div><span style="transform: rotateZ(-330deg);">2</span></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+      var Hour=document.getElementById('h');
+      var Minute=document.getElementById('m');
+      var Second=document.getElementById('s');
+       function time(){
+        var date=new Date();
+        var S=date.getSeconds();
+        var M=date.getMinutes()+S/60;
+        var H=date.getHours()+M/60;
+
+       Second.style.transform='rotate('+(S*6-90)+'deg)';
+       Minute.style.transform='rotate('+(M*6-90)+'deg)';
+       Hour.style.transform='rotate('+(H*30-90)+'deg)';
+}
+   time();
+   setInterval(time,1000);
+</script>
+</html>
